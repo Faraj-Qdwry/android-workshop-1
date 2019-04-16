@@ -1,0 +1,18 @@
+MPAndroidChart
+https://github.com/mitchtabian/Pie-Chart-Tutorial
+
+Map dependencies 
+https://developers.google.com/android/guides/releases#february_7_2019
+Add Firebase to your Android project
+https://firebase.google.com/docs/android/setup
+https://firebase.google.com/docs/database/android/start
+
+
+Key store Android :
+keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+
+Key Store IOS :
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+setUp Google map
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=46:DA:2F:B5:04:B5:10:55:78:73:96:AE:26:E5:38:4A:6A:62:93:E7%3Bcom.aqsoft.mapsapplication
