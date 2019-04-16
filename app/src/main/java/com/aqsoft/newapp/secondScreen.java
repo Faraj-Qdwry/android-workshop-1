@@ -48,17 +48,23 @@ public class secondScreen extends AppCompatActivity {
         });
 
 
+        getIntent().getParcelableExtra("data");
 
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                TempData updatedDate = dataSnapshot.getValue(TempData.class);
 
-                list.add(updatedDate);
+                for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()) {
+                    TempData updatedDate = dataSnapshot.getValue(TempData.class);
+                    textView.setText(updatedDate.unit+"");
+                    list.add(updatedDate);
 
-                textView.setText(updatedDate.unit+"");
+                }
+
+
+
             }
 
             @Override

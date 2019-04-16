@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     Button bt1;
@@ -35,10 +37,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        final ArrayList<TempData> list = new ArrayList<>();
+
+
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,secondScreen.class);
+                intent.putExtra("data",list);
                 startActivity(intent);
             }
         });
