@@ -1,5 +1,6 @@
 package com.aqsoft.newapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button bt1;
     TextView tex1;
     int count = 0;
+    Button bt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         bt1 = findViewById(R.id.button1);
         tex1 = findViewById(R.id.temp);
+        bt2 = findViewById(R.id.button2);
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,secondScreen.class);
+                startActivity(intent);
+            }
+        });
 
         Toast.makeText(this, "onCreate",Toast.LENGTH_SHORT).show();
     }

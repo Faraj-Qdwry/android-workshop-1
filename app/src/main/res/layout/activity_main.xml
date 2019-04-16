@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Button 1" />
+        android:text="inc 1" />
 
     <Button
         android:id="@+id/button2"
@@ -60,8 +60,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_margin="20dp"
         android:background="@drawable/ic_launcher_background"
-        android:text="Button" />
+        android:text="move to firbase" />
 
 
 </LinearLayout>
